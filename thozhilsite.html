@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thozhil</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+    function changetextcolour(){
+        document.getElementById("tc").style.color="blue";
+    }
+    function changetextcolour1(){
+        document.getElementById("tc").style.color="black";
+    }
+    function changecolour(){
+        document.getElementById("clr").style.background="blue";
+        document.getElementById("clr").style.color="white";
+
+    }
+    function changecolouraa(){
+        document.getElementById("clr1").style.background="blue";
+        document.getElementById("clr1").style.color="white";
+
+    }
+    function changecolourbb(){
+        document.getElementById("clr2").style.background="blue";
+        document.getElementById("clr2").style.color="white";
+
+    }
+    function changecolourcc(){
+        document.getElementById("clr3").style.background="blue";
+        document.getElementById("clr3").style.color="white";
+
+    }
+    
+    function changecolour1(){
+        document.getElementById("clr").style.background="white";
+        document.getElementById("clr").style.color="black";
+
+    }
+
+    function changecolour1a(){
+        document.getElementById("clr1").style.background="white";
+        document.getElementById("clr1").style.color="black";
+
+    }
+    function changecolour1b(){
+        document.getElementById("clr2").style.background="white";
+        document.getElementById("clr2").style.color="black";
+
+    }
+    function changecolour1c(){
+        document.getElementById("clr3").style.background="white";
+        document.getElementById("clr3").style.color="black";
+
+    }
+    function showtext(){
+        (document.getElementById("ss1").style.marginTop="140px");
+    }
+</script>
+<style>
+            img[alt=kk] {
+
+            opacity: 0.8;
+            background-repeat: no-repeat;
+            position: absolute;
+            z-index: -1;
+        }
+        #cf {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(224, 224, 224, 0.2);
+      }
+      .slider-container {
+        width: 100%;
+        height: fit-content;
+        padding: 20px 0;
+        overflow: auto;
+      }
+      .slider-container::-webkit-scrollbar {
+        width: 80px;
+        height: 5px;
+      }
+      .slider-container::-webkit-scrollbar-thumb {
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+      }
+      .slider-container::-webkit-scrollbar-track {
+        background: rgba(224, 224, 224, 0.10);
+      }
+
+      .cards-holder {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card {
+        width: 300px;
+        height: 300px;
+        background: white;
+        box-shadow: 0 30px 30px rgba(0, 0, 0, 0.14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        margin: 0 20px;
+        border-radius: 20px;
+      }
+
+      .card span {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 30px;
+      }
+      .cards-holder {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scroll 10s linear infinite;
+    }
+
+    .card {
+        width: 300px;
+        height: 300px;
+        background: white;
+        box-shadow: 0 30px 30px rgba(0, 0, 0, 0.14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        margin: 0 20px;
+        border-radius: 20px;
+        /* animation: scroll 10s linear infinite; */
+        /* YOU CAN ADD HERE AS WELL BASED ON REQUIREMENT */
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-70%);
+        }
+      }
+</style>
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+        <div class="row fixed-top bg-light">
+            <div class="col">
+                <a href="#"><img src="images/thozhilicon.jpg" alt="type"></a>
+            </div>
+            <div class="col">
+                <nav class="navbar navbar-expand-sm ">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <h5>HOME</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="popover" title="Full-Time"
+                                data-bs-content="Part-time">
+                                <h5>Jobs</h5>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="popover" title="Full-Time"
+                                data-bs-content="Part-Time">
+                                <h5>Interships</h5>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <h5>How its work</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <h5>FQA</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-info text-light" data-bs-toggle="modal"
+                                data-bs-target="#mymodal" style="border-radius: 15px;">
+                                <h5 class='fa fa-sign-in' style="padding: 5px;"></h5>Login/Register
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <script>
+                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                    return new bootstrap.Popover(popoverTriggerEl)
+                })
+            </script>
+
+        </div>
+        <div class="modal" id="mymodal">
+            <div style="height: 400px;width: 600px;background:gray;margin-left: 500px;">
+                <div class="modal-header">
+                    <h5>Login</h5>
+
+                </div>
+                <div class="bg-light">
+                    <div class="modal-body">
+                        <div class="input-group">
+                        <span class="input-group-text fa fa-user text-info"></span><input type="text" class="form-control"
+                                    placeholder="Email"  required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Please fill the field</div>
+                            </div>
+                            <div class="input-group mt-5">
+                        <span class="input-group-text fa fa-lock text-info"></span><input type="text" class="form-control" placeholder="password" 
+                                reqiured>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">please fill the field</div></div>
+                        
+                        <p class="text-secondary" style="text-align: right;">Forgot password?</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info"
+                            style="border-radius: 15px;width: 100%;">Login</button>
+                        <p style="margin-right: 200px;">Don't have an account?<span class="text-info">Register</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container" style="padding: 80px;">
+            <div class="row pt-5">
+                <div class="col">
+                    <h3 id="tc" onmouseover="changetextcolour()" onmouseout="changetextcolour1()">"Fueling Your Journey:<br>Interships Ignite, Jobs<br>Propel-Your Trailblazing<br>Odyssey Begins
+                        Here!"</h3>
+                    <button type="button" class="btn btn-info"
+                        style="width: 30%;margin-top: 30px;border-radius: 30px;">Enroll now</button>
+                </div>
+                <div class="col">
+                    <img src="images/person1.jpg" alt="type">
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align: center;">
+            <h2>The Reality of <span class="text-info">Starting Your Carrer</span></h2>
+            <img src="images/border.jpg" alt="border">
+            <p style="height: 300px;width: 500px;margin-left: 300px;padding-top: 10px;" class="text-secondary">Embarking on your career
+                journey? Thozhil unveils the realities with you. Trust our commitment for a seamless start, turning your
+                career dreams into a tangible reality. With Thozhil, step into a future filled with purpose and
+                confidence!"</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col"
+                    style="border: 2px solid gray;border-top-right-radius:40px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;height: 400px;width: 300px;">
+                    <img src="images/n1.png" alt="bb" height="200px">
+                    <h4>Efficiency Enhancement</h4>
+                    <p class="text-secondary pt-3">Save Time with Thozhil! Streamline your journey to success. Let Thozhil
+                        handle the details, so you can focus on what truly matters – building your future!</p>
+                    
+                    </div>
+                    <div class="col"
+                        style="border: 2px solid gray;border-top-right-radius:40px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;margin-left: 30px;height: 400px;width: 300px;">
+                        <img src="images/n2.png" alt="bb" height="200px">
+                        <h4>Compelete Flexibility</h4>
+                        <p class="text-secondary pt-3">Tailor your career path on your terms. Empower yourself with choices,
+                            ensuring your journey to success is uniquely yours.</p></div>
+                            <div class="col"
+                            style="border: 2px solid gray;border-top-right-radius:40px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;height: 400px;width: 300px;margin-left: 30px;">
+                            <img src="images/n3.png" alt="bb" height="200px">
+                            <h4>Guaranteed Placement</h4>
+                            <p class="text-secondary pt-3">Guaranteed Placement Excellence! Secure your future with Thozhil. Our commitment ensures your success – a promise fulfilled in every career step.</p></div>
+                </div>
+            </div>
+            <div class="container pt-5">
+                <h3>About <span class="text-info"> What We Do?</span> & Who We are?</h3>
+            </div>
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div style="border: 1px solid black;height: 350px;width: 250px;" class="pt-4" id="clr" onmouseover="changecolour()" onmouseout="changecolour1()">
+                            <h5 class="text-info p-3">Define Your Goals</h5>
+                            <p class="p-3">Thozhil offers opportunities for job seekers and employers to achieve career goals through placements and internships. Our platform makes it easy to define and pursue objectives. With Thozhil, explore, connect, and succeed.</p>
+                        </div></div>
+                        <div class="col-sm-3">
+                        <div style="border: 1px solid black;height: 350px;width: 250px;" class="pt-4" id="clr1" onmouseover="changecolouraa()" onmouseout="changecolour1a()">
+                            <h5 class="text-info p-3">24/7 Supports</h5>
+                            <p class="p-3">Thozhil ensures you have assistance whenever needed, whether navigating the platform, with questions, or needing immediate help. Your success is our priority, and we're here 24/7 to support you.</p>
+                        </div></div>
+                        <div class="col-sm-6">
+                            <img src="images/study.png" alt="study">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 100px;">
+                        
+                            <div class="col-sm-3" >
+                                <div style="border: 1px solid black;height: 350px;width: 250px;" class="pt-4" id="clr2" onmouseover="changecolourbb()" onmouseout="changecolour1b()">
+                                    <h5 class="text-info p-3" >Fixing Issuse</h5>
+                                    <p class="p-3">Encountered a problem? We've got you covered. Our dedicated support team is committed to swiftly resolving issues and ensuring your experience is seamless. Trust us to fix any concerns, so you can focus on what matters most – your success.</p>
+                                </div></div>
+                                <div class="col-sm-3">
+                                    <div style="border: 1px solid black;height: 350px;width: 250px;" class="pt-4" id="clr3" onmouseover="changecolourcc()" onmouseout="changecolour1c()">
+                                        <h5 class="text-info p-3">Co-Development</h5>
+                                        <p class="p-3">Embark on a journey of collaborative innovation with Thozhil's Co-Development services. Here, we merge your unique ideas with our expertise to create impactful solutions, ensuring shared success. Join us in shaping a future where innovation knows no bounds.</p>
+                                    </div></div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="text-align: center;">
+                <h2>Our <span class="text-info">Clients</span></h2>
+                <img src="images/border.jpg" alt="border">
+                <p style="height: 300px;width: 500px;margin-left: 300px;padding-top: 10px;" class="text-secondary">Our clients aren't just clients; they are valued partners in progress. We take pride in understanding their unique needs, tailoring solutions, and fostering long-term relationships.</p>
+            </div>
+            <div class="container-fluid" id="cf">
+                <div class="slider-container">
+                    <div class="cards-holder">
+                        <div class="card">
+                            <img src="images/1c.png" alt="sl">
+                        </div>
+                        <div class="card">
+                            <img src="images/2c.png" alt="sl">
+                        </div>
+                        <div class="card">
+                            <img src="images/3c.png" alt="sl">
+                        </div>
+                        <div class="card">
+                            <img src="images/4c.png" alt="sl">
+                        </div>
+                        <div class="card">
+                            <img src="images/5c.png" alt="sl">
+                        </div>
+                        <div class="card">
+                            <img src="images/6c.png" alt="sl">
+                        </div>
+                        <div class="card">
+                            <img src="images/7c.png" alt="sl">
+                        </div>
+                        <div class="card">
+                            <img src="images/8c.png" alt="sl">
+                        </div>
+                        <div class="card">
+                            <img src="images/9c.png" alt="sl">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-sm-3 form-floating mb-3 mt-3" style="border: 2px solid white;overflow: hidden; border-radius: 20px;box-shadow:0 30px 30px rgba(0, 0, 0, 0.14) ;margin-left: 90px;height: 400px;width: 300px;">
+                        
+                        <img src="images/ss1.png" alt="sss">
+                        <h4 class="text-center text-info">STEP 1</h4>
+                        <h5 class="text-center text-dark">Account Creation</h5>
+
+                        <p class="text-secondary pt-3">Quickly access everything conveniently and efficiently from your personalized dashboard interface.</p>
+                    </div>
+                    <div class="col-sm-3 form-floating mb-3 mt-3" style="border: 2px solid white; border-radius: 20px;box-shadow:0 30px 30px rgba(0, 0, 0, 0.14) ;margin-left: 30px;" >
+                        <img src="images/ss2.png" alt="sss">
+                        <h4 class="text-center text-info">STEP 2</h4>
+                        <h5 class="text-center text-dark">Customized your profile</h5>
+                        <p class="text-secondary">Easily tailor your profile by editing skills and area of interest to match desired opportunities on this platform.</p>
+                    </div>
+                    <div class="col-sm-3 form-floating mb-3 mt-3" style="border: 2px solid white; border-radius: 20px;box-shadow:0 30px 30px rgba(0, 0, 0, 0.14) ;margin-left: 30px;" >
+                        <img src="images/ss3.png" alt="sss">
+                        <h4 class="text-center text-info">STEP 3</h4>
+                        <h5 class="text-center text-dark">Easy application process</h5>
+                        <p class="text-secondary">Apply to job and internship opportunities effortlessly with just a click on the "Apply Now" button.</p>
+                    </div>
+                    <div class="col-sm-3 form-floating mb-3 mt-3" style="border: 2px solid white; border-radius: 20px;box-shadow:0 30px 30px rgba(0, 0, 0, 0.14) ;margin-left: 400px;" >
+                        <img src="images/ss4.png" alt="sss">
+                        <h4 class="text-center text-info">STEP 4</h4>
+                        <h5 class="text-center text-dark">Timely Notifiction</h5>
+                        <p class="text-secondary">Receive timely email notifications, ensuring you're always informed and up-to-date with the latest developments.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 form-floating mb-3 mt-3" style="border: 2px solid white; border-radius: 20px;box-shadow:0 30px 30px rgba(0, 0, 0, 0.14) ;margin-left: 90px;" id="ss1" onmouseover="showtext()">
+                        <img src="images/ss5.png" alt="sss">
+                        <h4 class="text-center text-info">STEP 5</h4>
+                        <h5 class="text-center text-dark">Easy Dashboard Access</h5>
+
+                        <p class="text-secondary">Quickly access everything conveniently and efficiently from your personalized dashboard interface.</p>
+                    </div>
+                    <div class="col-sm-3 form-floating mb-3 mt-3" style="border: 2px solid white; border-radius: 20px;box-shadow:0 30px 30px rgba(0, 0, 0, 0.14) ;margin-left: 30px;" >
+                        <img src="images/ss6.png" alt="sss" style="margin-left: 25px;">
+                        <h4 class="text-center text-info">STEP 6</h4>
+                        <h5 class="text-center text-dark">Assessment Process</h5>
+                        <p class="text-secondary">Please ensure you are adequately prepared for the upcoming MCQ test.</p>
+                    </div>
+                    <div class="col-sm-3 form-floating mb-3 mt-3" style="border: 2px solid white; border-radius: 20px;box-shadow:0 30px 30px rgba(0, 0, 0, 0.14) ;margin-left: 30px;" >
+                        <img src="images/ss7.png" alt="sss" class="pt-5">
+                        <h4 class="text-center text-info">STEP 7</h4>
+                        <h5 class="text-center text-dark">F2F process</h5>
+                        <p class="text-secondary">Approach direct interview through our portal with assurance and self-assurance.</p>
+                    </div>
+                    <div class="col-sm-3 form-floating mb-3 mt-3" style="border: 2px solid white; border-radius: 20px;box-shadow:0 30px 30px rgba(0, 0, 0, 0.14) ;margin-left: 400px;" >
+                        <img src="images/ss8.png" alt="sss">
+                        <h4 class="text-center text-info">STEP 8</h4>
+                        <h5 class="text-center text-dark">Offer Releases</h5>
+                        <p class="text-secondary">Receive official offer letters and joining dates seamlessly via email and dashboard notifications.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container pt-5">
+                <img src="images/e1.png" alt="kk" style="margin-left: 100px; width: 1000px;height: 400px;">
+                <h2 style="color: black;text-align: center;padding-top: 140px;margin-left: 70px;">Start your Carrer Journey With Our Thozhil Internships & Jobs</h2>
+                <p
+                    style="color:red;border: 2px solid black;text-align: center;width: 20%;padding: 15px;margin-left: 500px;margin-bottom: 100px;">
+                    Enroll now</p>
+            </div>
+            <div class="container" style="padding: 150px;"></div>
+            <div class="container-fluid bg-primary p-5">
+                <h4 class="text-center text-light">Join our mailing list to receive the <br>news & latest trends</h4>
+                 <div class="row pt-5" style="margin-left: 420px;">
+                    <div class="col-sm-3">
+                        <input type="email" class="bg-primary" placeholder="Email Address..." style="border:0;color: white;"><hr>
+
+
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-dark text-light" style="border-radius: 20px;width: 40%;">Subscribe</button>
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col">
+                        <h5 class="text-light">About Our Website</h5>
+                        <h4 class="text-dark pt-3">Thozil</h4>
+                        <p class="text-light">Find your relevant career that matches your skills and passion.</p>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-light">About Us</h5>
+                    <p class="text-light pt-3">Home</p>
+                    <p class="text-light">Full-time Jobs</p>
+                    <p class="text-light">Prt-time-Jobs</p>
+                    <p class="text-light">Full-time-Interships</p>
+                    <p class="text-light">Part-time-Interships</p>
+                    <p class="text-light">Howe It works</p>
+                    <p class="text-light">Contact Us</p>
+
+                </div>
+                    <div class="col">
+                        <h5 class="text-light ">Useful Links</h5>
+                        <p class="text-light pt-3">Our Mission</p>
+                        <p class="text-light">Our Vision</p>
+                        <p class="text-light">FAQ</p>
+                        <p class="text-light">Privacy Policy</p>
+                        <p class="text-light">Terms & Condition</p>
+                        <p class="text-light">Pricing Policy</p>
+                        <p class="text-light">Cancellation <br>Policy</p>
+
+                    </div>
+                    <div class="col">
+                        <h5 class="text-light">Join Us</h5>
+                        <p class="fa fa-facebook pt-3" style="font-size: 25px;"><span class="fa fa-instagram" style="margin-left:15px;"></span><span class="fa fa-linkedin" style="margin-left:15px;"></span></p>
+                        <p >Email:<span class="text-info"> info@thozhil.com</span><span><br>Customer Support:+91 65381 00459</span></p> 
+                    </div>
+                 </div>
+                 <div class="container" style="text-align: center;padding-top: 100px;">
+                    <p class="text-light">Developed By Venipriya Infotech Solutions<br>
+                    <span class="text-light">Copyright © 2023 Thozhil. All Rights Reserved.</span></p>
+    
+                </div>
+            </div>
+
+</body>
+
+</html>
